@@ -1,7 +1,9 @@
+import { GradientLine } from '../components/GradientLine'
+
 export default function Home() {
   return (
     <>
-      <h2>Hello, world!</h2>
+      <GradientLine />
     </>
   )
 }
