@@ -14,17 +14,11 @@ export const theme = extendTheme({
         color: 'gray.50',
         backgroundColor: 'gray.800'
       },
-      p: {
-        fontSize: 'xl',
-        lineHeight: 'tall'
-      },
-      h1: {
-        fontSize: '4xl',
-        fontWeight: 'bold'
-      },
-      h2: {
-        fontSize: '3xl',
-        fontWeight: 'bold'
+      button: {
+        _focus: {
+          boxShadow:
+            '0 0 1px 3px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)'
+        }
       }
     }
   }
