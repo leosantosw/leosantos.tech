@@ -14,7 +14,6 @@ export function NavLink({ children, href }: NavLinkProps) {
         fontSize="sm"
         fontWeight="semibold"
         display="inline-block"
-        color="gray.50"
       >
         {children}
       </Text>
