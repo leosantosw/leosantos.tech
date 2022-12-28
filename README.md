@@ -1,35 +1,40 @@
 # [leosantos.tech](https://leosantos.tech/)
 
-## Instalar e rodar o projeto
+This is a Next.js portfolio built with Chakra UI and TypeScript.
 
-Rodar o projeto em sua máquina local é uma tarefa extremamente simples.
+## Getting Started
 
-### Dependências globais
+To get started, clone the repository and install the dependencies:
 
-Você precisa ter duas principais dependências instaladas:
-
-- Node.js LTS v16 (ou qualquer versão superior)
-
-Utiliza `nvm`? Então pode executar `nvm install` na pasta do projeto para instalar e utilizar a versão mais apropriada do Node.js.
-
-### Dependências locais
-
-Então após baixar o repositório, não se esqueça de instalar as dependências locais do projeto:
-
-```bash
+```
+git clone https://github.com/leosantosw/leosantos.tech.git leosantos
+cd leosantos
 npm install
 ```
 
-### Rodar o projeto
+Then, start the development server:
 
-Para rodar o projeto localmente, basta rodar o comando abaixo:
-
-```bash
+```
 npm run dev
 ```
+The app will be available at http://localhost:3000.
 
-Isto irá automaticamente rodar o serviço Web (Frontend) no seguinte endereço:
+## Features
 
-```bash
-http://localhost:3000
-```
+- Responsive layout using Chakra UI
+- TypeScript for type checking and improved developer experience
+- Dynamic routing for individual project pages
+
+## Built With
+
+- [Next.js](https://nextjs.org/) - A lightweight framework for static and server-rendered applications.
+- [Chakra UI](https://chakra-ui.com/) - A simple and flexible UI component library.
+- [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that compiles to plain JavaScript.
+
+## Contributing
+
+If you'd like to contribute to this project, please read the [contributing guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
