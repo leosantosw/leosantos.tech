@@ -1,14 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import sunImg from '../public/assets/sun.svg'
-import moonImg from '../public/assets/moon.svg'
 import { NavLink } from '../components/NavLink'
 import { GradientLine } from '../components/GradientLine'
-import { Button, Container, Flex, Text, useColorMode } from '@chakra-ui/react'
+import { Container, Flex, Text } from '@chakra-ui/react'
+import { ToggleTheme } from '../components/ToggleTheme'
 
 export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode()
-
   return (
     <Flex
       as="header"
@@ -48,24 +45,7 @@ export default function Home() {
           <NavLink href="#">Blog</NavLink>
         </Flex>
 
-        <Flex>
-          <Button
-            p="1"
-            h="40px"
-            display="flex"
-            variant="unstyled"
-            alignItems="center"
-            justifyContent="center"
-            onClick={toggleColorMode}
-          >
-            <Image
-              width={34}
-              height={34}
-              src={colorMode == 'dark' ? moonImg : sunImg}
-              alt="switch theme"
-            />
-          </Button>
-        </Flex>
+        <ToggleTheme />
       </Container>
       <Container
         p={4}
