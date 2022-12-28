@@ -41,9 +41,9 @@ export function Header() {
         </Flex>
 
         <Flex>
-          <NavLink href="#">Home</NavLink>
-          <NavLink href="#">About</NavLink>
-          <NavLink href="#">Blog</NavLink>
+          <NavLink href="/">Home</NavLink>
+          <NavLink href="/about">About</NavLink>
+          <NavLink href="/blog">Blog</NavLink>
         </Flex>
 
         <ToggleTheme />

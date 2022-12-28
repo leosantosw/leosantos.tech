@@ -23,6 +23,16 @@ export const theme = extendTheme({
         },
         _light: {
           bg: 'gray.50',
+          color: 'gray.600'
+        }
+      },
+      link: {
+        _dark: {
+          bg: 'gray.800',
+          color: 'gray.50'
+        },
+        _light: {
+          bg: 'gray.50',
           color: 'gray.800'
         }
       },
