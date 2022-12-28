@@ -17,7 +17,7 @@ export function NavLink({ children, href, ...rest }: NavLinkProps) {
   const { colorMode } = useColorMode()
 
   const isActive = router.pathname === href
-  const colorActiveMenuItem = colorMode === 'light' ? 'gray.800' : 'blue.400'
+  const colorActiveMenuItem = colorMode === 'light' ? 'gray.700' : 'blue.400'
 
   return (
     <Link as={NextLink} href={href} {...rest} passHref>
@@ -28,7 +28,7 @@ export function NavLink({ children, href, ...rest }: NavLinkProps) {
         color={isActive ? colorActiveMenuItem : 'inherit'}
         _hover={{
           textDecoration: 'underline',
-          color: 'var(--chakra-colors-gray-700)'
+          color: colorActiveMenuItem
         }}
       >
         {children}
