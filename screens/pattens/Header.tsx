@@ -34,15 +34,13 @@ export function Header() {
       >
         <Flex display="flex">
           <Link href="/">
-            <div>
-              <Image
-                alt="Laura Beatris Logo"
-                src="/assets/logo.png"
-                width={50}
-                height={50}
-                priority
-              />
-            </div>
+            <Image
+              alt="Leonardo Logo"
+              src="/assets/logo.png"
+              width={isMobileVersion ? 30 : 50}
+              height={isMobileVersion ? 30 : 50}
+              priority
+            />
           </Link>
         </Flex>
 
