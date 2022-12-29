@@ -11,6 +11,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" sizes="32x32" href="/favicon.ico" />
       </Head>
       <body>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
