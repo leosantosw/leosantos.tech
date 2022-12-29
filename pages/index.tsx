@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Text, Container } from '@chakra-ui/react'
 import { Header } from '../screens/pattens/Header'
+import { GetDayOfWeek } from '../utils/GetDayOfWeek'
 
 export default function Home() {
+  const dayOfWeek = GetDayOfWeek()
+
   return (
     <>
       <Head>
@@ -18,7 +21,7 @@ export default function Home() {
         justifyContent="center"
       >
         <Text fontSize="5xl" fontWeight="extrabold">
-          Happy Monday!
+          Happy {dayOfWeek}!
         </Text>
         <Text fontSize="4xl" fontWeight="bold">
           I&apos;m Leo Santos 🚀
