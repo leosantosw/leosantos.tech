@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import { Text, Container } from '@chakra-ui/react'
 import { Header } from '../screens/pattens/Header'
@@ -5,6 +6,9 @@ import { Header } from '../screens/pattens/Header'
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Leo Santos - Software Engineer</title>
+      </Head>
       <Header />
       <Container
         p={4}
