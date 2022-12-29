@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import useSound from 'use-sound'
-import { useEffect } from 'react'
 import sunImg from '../../public/assets/sun.svg'
 import moonImg from '../../public/assets/moon.svg'
 import { Button, useColorMode } from '@chakra-ui/react'
@@ -9,16 +8,13 @@ import lightSound from '../../public/sounds/light-active.mp3'
 
 export function ToggleTheme() {
   const { colorMode, toggleColorMode } = useColorMode()
-  const [playDark] = useSound(darkSound)
-  const [playLight] = useSound(lightSound)
+  const isDarkMode = colorMode === 'dark'
+  const [playSound] = useSound(isDarkMode ? lightSound : darkSound)
 
-  useEffect(() => {
-    if (colorMode == 'dark') {
-      playDark()
-    } else {
-      playLight()
-    }
-  }, [colorMode, playDark, playLight])
+  function handleOnClick() {
+    playSound()
+    toggleColorMode()
+  }
 
   return (
     <Button
@@ -28,12 +24,12 @@ export function ToggleTheme() {
       variant="unstyled"
       alignItems="center"
       justifyContent="center"
-      onClick={toggleColorMode}
+      onClick={handleOnClick}
     >
       <Image
         width={34}
         height={34}
-        src={colorMode == 'dark' ? moonImg : sunImg}
+        src={isDarkMode ? moonImg : sunImg}
         alt="switch theme"
       />
     </Button>
