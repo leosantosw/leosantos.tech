@@ -6,9 +6,9 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
           rel="stylesheet"
         />
         <link rel="shortcut icon" sizes="32x32" href="/favicon.ico" />
