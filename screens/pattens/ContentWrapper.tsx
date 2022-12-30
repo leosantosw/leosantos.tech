@@ -52,7 +52,12 @@ export function ContentWrapper() {
           <Image src={rocketImg} width={50} height={50} alt="Rocket" />
         </Box>
 
-        <Text py={4} fontSize="2xl" fontWeight="light" textAlign="justify">
+        <Text
+          py={4}
+          fontSize={['1xl', '2xl']}
+          fontWeight="light"
+          textAlign="justify"
+        >
           Software Developer at{' '}
           <Link href="https://www.marche.com.br" target="_blank">
             <Text
