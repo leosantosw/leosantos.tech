@@ -3,7 +3,5 @@ export function GetDayOfWeek() {
     weekday: 'long'
   })
 
-  console.log(dayOfWeekName)
-
   return dayOfWeekName
 }

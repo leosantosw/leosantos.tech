@@ -3,13 +3,13 @@ import useSound from 'use-sound'
 import sunImg from '../../public/assets/sun.svg'
 import moonImg from '../../public/assets/moon.svg'
 import { Button, useColorMode } from '@chakra-ui/react'
-import darkSound from '../../public/sounds/dark-active.mp3'
-import lightSound from '../../public/sounds/light-active.mp3'
+import switchOn from '../../public/sounds/switch-on.mp3'
+import switchOff from '../../public/sounds/switch-off.mp3'
 
 export function ToggleTheme() {
   const { colorMode, toggleColorMode } = useColorMode()
   const isDarkMode = colorMode === 'dark'
-  const [playSound] = useSound(isDarkMode ? lightSound : darkSound)
+  const [playSound] = useSound(isDarkMode ? switchOff : switchOn)
 
   function handleOnClick() {
     playSound()
