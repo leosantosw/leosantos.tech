@@ -29,7 +29,7 @@ export function Header() {
         display="flex"
         alignItems="center"
         justifyContent="space-between"
-        paddingY={8}
+        paddingY={6}
         maxWidth="720px"
       >
         <Flex display="flex">
