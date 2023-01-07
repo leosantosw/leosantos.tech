@@ -22,6 +22,7 @@ export function Header() {
       position="sticky"
       direction="column"
       backgroundColor="var(header-background)"
+      css={{ backdropFilter: 'saturate(180%) blur(20px)' }}
     >
       <GradientLine />
       <Container
