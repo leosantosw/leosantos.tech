@@ -5,6 +5,7 @@ import {
   MenuButton,
   IconButton
 } from '@chakra-ui/react'
+import Link from 'next/link'
 
 import { Browser, House, Info, List, X } from 'phosphor-react'
 
@@ -27,9 +28,15 @@ export function MenuMobile() {
             marginX={4}
           />
           <MenuList>
-            <MenuItem icon={<House size={18} />}>Home</MenuItem>
-            <MenuItem icon={<Info size={18} />}>About</MenuItem>
-            <MenuItem icon={<Browser size={18} />}>Blog</MenuItem>
+            <Link href="/" passHref>
+              <MenuItem icon={<House size={18} />}>Home</MenuItem>
+            </Link>
+            <Link href="/about" passHref>
+              <MenuItem icon={<Info size={18} />}>About</MenuItem>
+            </Link>
+            <Link href="https://dev.to/leosantosw" target="_blank">
+              <MenuItem icon={<Browser size={18} />}>Blog</MenuItem>
+            </Link>
           </MenuList>
         </>
       )}
