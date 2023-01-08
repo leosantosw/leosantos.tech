@@ -49,7 +49,9 @@ export function Header() {
           <Flex>
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>
-            <NavLink href="/blog">Blog</NavLink>
+            <NavLink href="https://dev.to/leosantosw" target="_blank">
+              Blog
+            </NavLink>
           </Flex>
         )}
 
