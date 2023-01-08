@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Box, Flex, Text, useColorMode } from '@chakra-ui/react'
+import { Flex, Text, useColorMode } from '@chakra-ui/react'
 import { GithubLogo, LinkedinLogo, TwitterLogo } from 'phosphor-react'
 
 import { GradientLine } from '../GradientLine'
@@ -8,10 +8,11 @@ export function Footer() {
   const { colorMode } = useColorMode()
   const isDarkMode = colorMode === 'dark'
   return (
-    <Box
-      borderTop="1px solid #1E40AF"
-      justifyContent="flex-end"
-      alignItems="center"
+    <Flex
+      borderTopWidth={2}
+      width="full"
+      marginTop="auto"
+      direction="column"
       mt="6"
     >
       <Flex justifyContent="center" py="2">
@@ -44,6 +45,6 @@ export function Footer() {
         </Flex>
       </Flex>
       <GradientLine />
-    </Box>
+    </Flex>
   )
 }
